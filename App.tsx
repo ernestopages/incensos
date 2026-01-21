@@ -1,20 +1,33 @@
 
 import React, { useRef } from 'react';
 
-const CTAButton: React.FC<{ text: string; className?: string; onClick?: () => void; href?: string }> = ({ text, className = "", onClick, href }) => {
+const ShoppingBagIcon = () => (
+  <svg className="w-5 h-5 md:w-6 md:h-6 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+  </svg>
+);
+
+const CTAButton: React.FC<{ text: string; className?: string; onClick?: () => void; href?: string; showIcon?: boolean }> = ({ text, className = "", onClick, href, showIcon = false }) => {
   const baseClasses = `w-full md:w-auto px-6 md:px-8 py-4 text-sm md:text-base font-bold text-white rounded-xl btn-cta animate-cta uppercase tracking-wider md:tracking-widest whitespace-normal shadow-lg flex items-center justify-center text-center leading-tight transition-all duration-300 no-underline cursor-pointer ${className}`;
   
+  const content = (
+    <>
+      {showIcon && <ShoppingBagIcon />}
+      {text}
+    </>
+  );
+
   if (href) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={baseClasses}>
-        {text}
+        {content}
       </a>
     );
   }
   
   return (
     <button onClick={onClick} className={baseClasses}>
-      {text}
+      {content}
     </button>
   );
 };
@@ -101,7 +114,7 @@ const App: React.FC = () => {
     document.getElementById('offer-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const FINAL_LINK = "https://go.frendz.com.br/talug";
+  const FINAL_LINK = "https://indec-digital.mycartpanda.com/checkout/203161373:1";
 
   return (
     <main className="antialiased overflow-x-hidden">
@@ -175,7 +188,7 @@ const App: React.FC = () => {
       <Section className="text-center">
         <img 
           src="https://i.ibb.co/pBV8WBLr/Incensos.webp" 
-          alt="Incensos em production" 
+          alt="Incensos em produção" 
           className="rounded-3xl shadow-lg mb-10 w-full max-w-xl mx-auto"
           loading="lazy"
         />
@@ -417,7 +430,7 @@ const App: React.FC = () => {
 
           <p className="text-base md:text-lg font-bold mb-8 title-main uppercase leading-tight">Comece sua jornada na arte dos incensos naturais agora!</p>
           <div className="flex justify-center">
-            <CTAButton text="QUERO LIBERAR O GUIA AGORA" href={FINAL_LINK} className="md:px-12" />
+            <CTAButton text="QUERO COMPRAR AGORA" href={FINAL_LINK} className="md:px-12" showIcon={true} />
           </div>
         </div>
       </Section>
@@ -470,7 +483,7 @@ const App: React.FC = () => {
           ✨ Permita-se viver a experência de criar seus próprios incensos artesanais e transformar sua energia, sua casa e sua vida com esse conhecimento único!
         </p>
         <div className="flex justify-center">
-          <CTAButton text="QUERO COMEÇAR AGORA!" href={FINAL_LINK} />
+          <CTAButton text="QUERO COMPRAR AGORA" href={FINAL_LINK} showIcon={true} />
         </div>
       </Section>
 
