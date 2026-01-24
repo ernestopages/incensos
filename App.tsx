@@ -116,6 +116,15 @@ const App: React.FC = () => {
 
   const FINAL_LINK = "https://indec-digital.mycartpanda.com/checkout/203161373:1";
 
+  const testimonialImages = [
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Depoimento_01_jbadrl.webp",
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Depoimento_02_xkllwr.webp",
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_03_q9lwre.webp",
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_04_ajmyhf.webp",
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_05_nqip50.webp",
+    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_06_x4b1sc.webp"
+  ];
+
   return (
     <main className="antialiased overflow-x-hidden">
       {/* SESSÃO 1 – HERO */}
@@ -128,7 +137,7 @@ const App: React.FC = () => {
         </p>
         <div className="mb-6 relative inline-block px-2">
           <img 
-            src="https://i.ibb.co/jPStrNgP/Capa-Inicio.webp" 
+            src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Capa_Inicio_ezxhme.webp" 
             alt="Capa do Guia A Arte dos Incensos Artesanais" 
             className="rounded-[2rem] shadow-2xl mx-auto w-full max-w-[360px] md:max-w-[560px]"
             loading="lazy"
@@ -187,7 +196,7 @@ const App: React.FC = () => {
       {/* SESSÃO 4 – VANTAGENS */}
       <Section className="text-center">
         <img 
-          src="https://i.ibb.co/pBV8WBLr/Incensos.webp" 
+          src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Incensos_vod93g.webp" 
           alt="Incensos em produção" 
           className="rounded-3xl shadow-lg mb-10 w-full max-w-xl mx-auto"
           loading="lazy"
@@ -246,18 +255,11 @@ const App: React.FC = () => {
             ref={scrollRef}
             className="carousel-container flex overflow-x-auto gap-5 py-6 px-2 mb-8 snap-x snap-mandatory"
           >
-            {[
-              { id: 'tTytHwBv', name: 'Depo-1' },
-              { id: 'sJNdQYLh', name: 'Depo-3' },
-              { id: 'gF9n98z4', name: 'Depo-2' },
-              { id: 'LdCgdcHb', name: 'Depo-4' },
-              { id: 'nsg2xwjC', name: 'Depo-6' },
-              { id: '9Q2vbXb', name: 'Depo-5' }
-            ].map((item, i) => (
+            {testimonialImages.map((src, i) => (
               <div key={i} className="min-w-[85%] md:min-w-[320px] snap-center">
                 <img 
-                  src={`https://i.ibb.co/${item.id}/${item.name}.webp`} 
-                  alt="Depoimento de aluno" 
+                  src={src} 
+                  alt={`Depoimento ${i + 1}`} 
                   className="rounded-2xl shadow-xl border-4 border-white w-full animate-hint"
                   loading="lazy"
                 />
@@ -299,7 +301,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://i.ibb.co/GvTTgbSD/Passos-1.webp" 
+                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297845/Passos-_1__jzmgaf.webp" 
                 alt="Materiais e Preparo" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -316,7 +318,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://i.ibb.co/5XZ22RBn/Passos-2.webp" 
+                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297846/Passos-_2__qqzpvs.webp" 
                 alt="Receitas" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -333,7 +335,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://i.ibb.co/zH2nGn12/Passos-3.webp" 
+                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297846/Passos-_3__hmxynl.webp" 
                 alt="Ervas e Resinas" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -379,19 +381,19 @@ const App: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <BonusCard 
             number={1}
-            image="https://i.ibb.co/99Tz4bg1/B-nus-1.webp"
+            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_1__it3t0m.webp"
             title="GUIA FORNECEDORES DE MATERIAIS"
             description="Uma lista completa e atualizada com os melhores fornecedores para você encontrar ervas, resinas, pós naturais, óleos, materiais e muito mais com facilidade."
           />
           <BonusCard 
             number={2}
-            image="https://i.ibb.co/prs3LcjT/B-nus-2.webp"
+            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_2__exuaeo.webp"
             title="COMO VIVER DA VENDA DE INCENSOS ARTESANAIS"
             description="Um mini guia direto, prático e poderoso onde te mostro exatamente como você pode transformar essa arte em um negócio lucrativo, trabalhando de casa."
           />
           <BonusCard 
             number={3}
-            image="https://i.ibb.co/cXNhDY5g/B-nus-3.webp"
+            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_3__swwjdf.webp"
             title="COMO FAZER PORTA INCENSOS EM CASA"
             description="Além dos seus incensos, aprenda também a criar porta incensos lindos, funcionais e artesanais, usando materiais simples e acessíveis."
           />
@@ -415,7 +417,7 @@ const App: React.FC = () => {
 
           <div className="mb-10">
             <img 
-              src="https://i.ibb.co/xPtgsNv/Mockup-Pre-o.webp" 
+              src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Mockup_Pre%C3%A7o_kiatre.webp" 
               alt="Mockup Oferta" 
               className="mx-auto w-full max-w-[320px]"
               loading="lazy"
@@ -470,7 +472,7 @@ const App: React.FC = () => {
       <Section className="text-center pt-20 pb-24">
         <p className="text-xl md:text-2xl font-bold text-center mb-10 title-red uppercase tracking-tighter">Aproveite Esta <span className="highlight">OPORTUNIDADE</span>!</p>
         <img 
-          src="https://i.ibb.co/pv6zQcGj/Garantia.webp" 
+          src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Garantia_miktyg.webp" 
           alt="Garantia" 
           className="mx-auto mb-10 w-40 md:w-56"
           loading="lazy"
