@@ -117,12 +117,12 @@ const App: React.FC = () => {
   const FINAL_LINK = "https://indec-digital.mycartpanda.com/checkout/203161373:1";
 
   const testimonialImages = [
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Depoimento_01_jbadrl.webp",
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Depoimento_02_xkllwr.webp",
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_03_q9lwre.webp",
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_04_ajmyhf.webp",
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_05_nqip50.webp",
-    "https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Depoimento_06_x4b1sc.webp"
+    "https://i.ibb.co/tTytHwBv/Depo-1.webp",
+    "https://i.ibb.co/sJNdQYLh/Depo-3.webp",
+    "https://i.ibb.co/gF9n98z4/Depo-2.webp",
+    "https://i.ibb.co/LdCgdcHb/Depo-4.webp",
+    "https://i.ibb.co/nsg2xwjC/Depo-6.webp",
+    "https://i.ibb.co/9Q2vbXb/Depo-5.webp"
   ];
 
   return (
@@ -137,7 +137,7 @@ const App: React.FC = () => {
         </p>
         <div className="mb-6 relative inline-block px-2">
           <img 
-            src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/Capa_Inicio_ezxhme.webp" 
+            src="https://i.ibb.co/jPStrNgP/Capa-Inicio.webp" 
             alt="Capa do Guia A Arte dos Incensos Artesanais" 
             className="rounded-[2rem] shadow-2xl mx-auto w-full max-w-[360px] md:max-w-[560px]"
             loading="lazy"
@@ -196,8 +196,8 @@ const App: React.FC = () => {
       {/* SESSÃO 4 – VANTAGENS */}
       <Section className="text-center">
         <img 
-          src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Incensos_vod93g.webp" 
-          alt="Incensos em produção" 
+          src="https://i.ibb.co/pBV8WBLr/Incensos.webp" 
+          alt="Incensos em production" 
           className="rounded-3xl shadow-lg mb-10 w-full max-w-xl mx-auto"
           loading="lazy"
         />
@@ -301,7 +301,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297845/Passos-_1__jzmgaf.webp" 
+                src="https://i.ibb.co/GvTTgbSD/Passos-1.webp" 
                 alt="Materiais e Preparo" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -318,7 +318,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297846/Passos-_2__qqzpvs.webp" 
+                src="https://i.ibb.co/5XZ22RBn/Passos-2.webp" 
                 alt="Receitas" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -335,7 +335,7 @@ const App: React.FC = () => {
           <div className="flex flex-col bg-stone-50 rounded-[2rem] border border-stone-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
             <div className="w-full flex justify-center bg-stone-100 p-2">
               <img 
-                src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297846/Passos-_3__hmxynl.webp" 
+                src="https://i.ibb.co/zH2nGn12/Passos-3.webp" 
                 alt="Ervas e Resinas" 
                 className="w-full h-auto rounded-xl object-contain group-hover:scale-[1.02] transition-transform duration-500" 
                 loading="lazy" 
@@ -381,19 +381,19 @@ const App: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <BonusCard 
             number={1}
-            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_1__it3t0m.webp"
+            image="https://i.ibb.co/99Tz4bg1/B-nus-1.webp"
             title="GUIA FORNECEDORES DE MATERIAIS"
             description="Uma lista completa e atualizada com os melhores fornecedores para você encontrar ervas, resinas, pós naturais, óleos, materiais e muito mais com facilidade."
           />
           <BonusCard 
             number={2}
-            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_2__exuaeo.webp"
+            image="https://i.ibb.co/prs3LcjT/B-nus-2.webp"
             title="COMO VIVER DA VENDA DE INCENSOS ARTESANAIS"
             description="Um mini guia direto, prático e poderoso onde te mostro exatamente como você pode transformar essa arte em um negócio lucrativo, trabalhando de casa."
           />
           <BonusCard 
             number={3}
-            image="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297843/B%C3%B4nus-_3__swwjdf.webp"
+            image="https://i.ibb.co/cXNhDY5g/B-nus-3.webp"
             title="COMO FAZER PORTA INCENSOS EM CASA"
             description="Além dos seus incensos, aprenda também a criar porta incensos lindos, funcionais e artesanais, usando materiais simples e acessíveis."
           />
@@ -417,7 +417,7 @@ const App: React.FC = () => {
 
           <div className="mb-10">
             <img 
-              src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Mockup_Pre%C3%A7o_kiatre.webp" 
+              src="https://i.ibb.co/xPtgsNv/Mockup-Pre-o.webp" 
               alt="Mockup Oferta" 
               className="mx-auto w-full max-w-[320px]"
               loading="lazy"
@@ -472,7 +472,7 @@ const App: React.FC = () => {
       <Section className="text-center pt-20 pb-24">
         <p className="text-xl md:text-2xl font-bold text-center mb-10 title-red uppercase tracking-tighter">Aproveite Esta <span className="highlight">OPORTUNIDADE</span>!</p>
         <img 
-          src="https://res.cloudinary.com/drcqck3r9/image/upload/v1769297844/Garantia_miktyg.webp" 
+          src="https://i.ibb.co/pv6zQcGj/Garantia.webp" 
           alt="Garantia" 
           className="mx-auto mb-10 w-40 md:w-56"
           loading="lazy"
